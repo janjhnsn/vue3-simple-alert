@@ -10,9 +10,9 @@
 
 Simple _**alert()**_, _**confirm()**_, _**prompt()**_ for Vue.js version 3, using sweetalert2.
 
-## Demo
+## Origin project
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+Simple update of https://www.npmjs.com/package/vue-simple-alert to vue3
 
 ## Features
 
