@@ -2,21 +2,17 @@
 
 ![screenshot](./example/src/assets/screenshot.gif)
 
-[![version](https://img.shields.io/npm/v/vue-simple-alert)](https://www.npmjs.com/package/vue-simple-alert)
-[![Vue.js version](https://badgen.net/badge/vue.js/2.x/4fc08d)](https://vuejs.org)
-[![total downloads](https://img.shields.io/npm/dt/vue-simple-alert)](https://www.npmjs.com/package/vue-simple-alert)
-[![downloads](https://img.shields.io/npm/dw/vue-simple-alert)](https://www.npmjs.com/package/vue-simple-alert)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/97f03b2ea96049fbaff5591a94a7d0aa)](https://www.codacy.com/manual/constkhi/vue-simple-alert?utm_source=github.com&utm_medium=referral&utm_content=constkhi/vue-simple-alert&utm_campaign=Badge_Grade)
-[![license](https://img.shields.io/npm/l/vue-simple-alert)](LICENSE)
+[![version](https://img.shields.io/npm/v/vue3-simple-alert)](https://www.npmjs.com/package/vue3-simple-alert)
+[![Vue.js version](https://badgen.net/badge/vue.js/3.x)](https://vuejs.org)
+[![total downloads](https://img.shields.io/npm/dt/vue3-simple-alert)](https://www.npmjs.com/package/vue3-simple-alert)
+[![downloads](https://img.shields.io/npm/dw/vue3-simple-alert)](https://www.npmjs.com/package/vue3-simple-alert)
+[![license](https://img.shields.io/npm/l/vue3-simple-alert)](LICENSE)
 
-Simple _**alert()**_, _**confirm()**_, _**prompt()**_ for Vue.js, using sweetalert2.
+Simple _**alert()**_, _**confirm()**_, _**prompt()**_ for Vue.js version 3, using sweetalert2.
 
 ## Demo
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-
-Check out live
-<a href="https://constkhi.github.io/vue-simple-alert/" target="_blank">demo <i class="fas fa-external-link-alt"></i></a>
 
 ## Features
 
@@ -29,7 +25,7 @@ Check out live
 ## Install
 
 ```bash
-npm i vue-simple-alert
+npm i vue3-simple-alert
 ```
 
 ## Basic Usage
@@ -38,10 +34,12 @@ npm i vue-simple-alert
 
 ```javascript
 // main.js
-import Vue from "vue";
+import { createApp } from "vue";
 import VueSimpleAlert from "vue-simple-alert";
 
-Vue.use(VueSimpleAlert);
+const app = createApp({})
+
+app.use(VueSimpleAlert);
 ```
 
 ### Alert
@@ -80,28 +78,12 @@ Global options can be set when initialize plugin. Refer to [sweetalert2 document
 
 ```javascript
 // main.js
-import Vue from "vue";
+import { createApp } from "vue";
 import VueSimpleAlert from "vue-simple-alert";
 
-Vue.use(VueSimpleAlert, { reverseButtons: true });
-```
+const app = createApp({})
 
-### More advanced usage
-
-You can use sweetalert2's _**fire()**_ method through _**\$fire()**_.
-For detailed usage, refer to [sweetalert2](https://sweetalert2.github.io) documentation.
-
-```javascript
-// in any component
-
-this.$fire({
-  title: "Title",
-  text: "text",
-  type: "success",
-  timer: 3000
-}).then(r => {
-  console.log(r.value);
-});
+app.use(VueSimpleAlert, { reverseButtons: true });
 ```
 
 ## API
@@ -181,10 +163,6 @@ The prompt() method displays a dialog box that prompts the user for input.
 - returns: Promise\<string\>
 
 > Will be resolved with input text when OK button clicked. If the user clicks OK without entering any text, promise will be resolved with an empty string. If dialog box closed by any other reason, this promise will be rejected.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/constkhi/vue-simple-alert/tags).
 
 ## License
 
