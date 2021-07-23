@@ -1,6 +1,6 @@
 {
   "name": "vue3-simple-alert",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple alert(), confirm(), prompt() for Vue.js version 3, using sweetalert2.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
