@@ -1,0 +1,49 @@
+{
+  "name": "vue3-simple-alert",
+  "version": "1.0.0",
+  "description": "Simple alert(), confirm(), prompt() for Vue.js version 3, using sweetalert2.",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "sweetalert2": "^8.18.6"
+  },
+  "peerDependencies": {
+    "vue": "3.x"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "2.6.0",
+    "@typescript-eslint/parser": "2.6.0",
+    "eslint": "6.6.0",
+    "eslint-config-prettier": "6.5.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "prettier": "1.18.2",
+    "typescript": "^3.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janjhnsn/vue3-simple-alert.git"
+  },
+  "keywords": [
+    "alert",
+    "confirm",
+    "prompt",
+    "dialog",
+    "simple",
+    "sweetalert2",
+    "vue",
+    "vue3"
+  ],
+  "author": "janjhnsn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/janjhnsn/vue3-simple-alert/issues"
+  },
+  "homepage": "https://github.com/janjhnsn/vue3-simple-alert#readme",
+  "files": [
+    "/lib"
+  ]
+}
