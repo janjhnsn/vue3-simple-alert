@@ -1,7 +1,5 @@
 # Vue Simple Alert
 
-![screenshot](./example/src/assets/screenshot.gif)
-
 [![version](https://img.shields.io/npm/v/vue3-simple-alert)](https://www.npmjs.com/package/vue3-simple-alert)
 [![Vue.js version](https://badgen.net/badge/vue.js/3.x)](https://vuejs.org)
 [![total downloads](https://img.shields.io/npm/dt/vue3-simple-alert)](https://www.npmjs.com/package/vue3-simple-alert)
