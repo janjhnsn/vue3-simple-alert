@@ -33,7 +33,7 @@ npm i vue3-simple-alert
 ```javascript
 // main.js
 import { createApp } from "vue";
-import VueSimpleAlert from "vue-simple-alert";
+import VueSimpleAlert from "vue3-simple-alert";
 
 const app = createApp({})
 
@@ -77,7 +77,7 @@ Global options can be set when initialize plugin. Refer to [sweetalert2 document
 ```javascript
 // main.js
 import { createApp } from "vue";
-import VueSimpleAlert from "vue-simple-alert";
+import VueSimpleAlert from "vue3-simple-alert";
 
 const app = createApp({})
 
